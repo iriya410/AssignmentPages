@@ -1,0 +1,68 @@
+@media screen and (max-width: 80rem) {
+	.main {
+		width: 40rem;
+	}
+}
+
+@media screen and (min-width: 80.0625rem) {
+	.main {
+		width: 80rem;
+	}
+}
+
+.main {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container, .box {
+	float: left;
+}
+
+.container:hover {
+	background-color: #FFF0DC;
+}
+
+.peter>.box {
+	width: 40rem;
+}
+
+.box {
+	width: 20rem;
+	height: 20rem;
+}
+
+.text, .icon {
+	text-align: center;
+	color: #464646;
+}
+
+.text {
+	margin-top: 3.5rem;
+}
+
+.text h2 {
+	display: inline-block;
+	font: 1.1875rem/1.1 "Montserrat";
+	vertical-align: bottom;
+}
+
+.text p {
+	margin-top: 1em;
+	padding: 0 1em;
+	font: 1rem/1.5 "Open Sans"
+}
+
+.icon hr {
+	width: 6rem;
+	margin-top: 0.8125rem;
+	margin-bottom: 0.9375rem;
+}
+
+.icon a {
+	display: inline-block;
+}
+
+.twitter:hover {
+	fill: #0094FF;
+}

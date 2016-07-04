@@ -1,0 +1,30 @@
+/* reset_list */
+.reset_list ul, .reset_list ol,
+ul.reset_list, ol.reset_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* img 하단 공백 제거 */
+img {
+	vertical-align: bottom;
+}
+
+/* img 하단에 공백을 생성하여 옆으로 동일한 공간으로 배치될 수 있도록 설정 */
+.blank_bottom img + * {
+	overflow: hidden;
+}
+
+/* float된 요소를 부모 요소가 감싸야 할때 */
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* Opera Browser */
+.clearfix_opera::after {
+	content: "";
+	display: table;
+	clear: both;
+}
