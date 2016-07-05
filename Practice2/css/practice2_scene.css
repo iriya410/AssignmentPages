@@ -1,0 +1,64 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	line-height: 100vh;
+	text-align: center;
+}
+
+.position {
+	position: absolute;
+}
+
+.bg {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 1000px;
+	height: 643px;
+	background-image: url("../images/BG.png");
+}
+
+#box {
+	left: 513px;
+	top: 66px;
+}
+
+#mech {
+	right: 197px;
+	top: 80px;
+}
+
+#candle {
+	right: 0px;
+	top: 168px;
+}
+
+#paper {
+	left: 188px;
+	top: 199px;
+}
+
+#pencil {
+	left: 231px;
+	top: 204px;
+}
+
+#stamp {
+	left: 386px;
+	top: 119px;
+}
+
+#meter {
+	left: 188px;
+	bottom: 51px;
+}
+
+#clip {
+	left: 164px;
+	bottom: 175px;
+}
+
+#flower {
+	left: 76px;
+	bottom: 146px;
+}
