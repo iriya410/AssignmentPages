@@ -17,6 +17,7 @@
 
 .container, .box {
 	float: left;
+	position: relative;
 }
 
 .container:hover {
@@ -60,9 +61,30 @@
 }
 
 .icon a {
-	display: inline-block;
+	display: block;
 }
 
 .twitter:hover {
 	fill: #0094FF;
+}
+
+.container:hover .left::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: 7.5rem;
+	left: -2.5rem;
+	border-right: 2.5rem solid #FFF0DC;
+	border-top: 2rem solid transparent;
+	border-bottom: 2rem solid transparent;
+}
+
+.container:hover .right::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: 7.5rem;
+	border-left: 2.5rem solid #FFF0DC;
+	border-top: 2rem solid transparent;
+	border-bottom: 2rem solid transparent;
 }
