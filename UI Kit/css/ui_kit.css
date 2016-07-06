@@ -11,89 +11,173 @@ body {
 h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 1.5rem;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	letter-spacing: -0.025rem;
 	font-weight: 700;
 }
 
-h1 { font-size: 3.9rem; }
+p {
+	font-weight: 400;
+}
+
+h1 { font-size: 3.899rem; }
 h2 { font-size: 2.97rem; }
-h3 { font-size: 2.26rem; }
-h4 { font-size: 1.72rem; }
+h3 { font-size: 2.262rem; }
+h4 { font-size: 1.723rem; }
 h5 { font-size: 1.313rem; }
 
-h1, h2, .h1, .h2 { line-height: 4.5rem; }
-h3, h4, h5, .h3, .h4, .h5 { line-height: 3rem; }
+h1, h2, .h1, .h2 { height: 4.5rem; line-height: 4.5rem; }
+h3, h4, h5, .h3, .h4, .h5 { height: 3rem; line-height: 3rem; }
 
-section {
-	float: left;
+.container {
 	width: 50%;
-	min-width: 640px;
+	min-width: 720px;
 }
 
-.section_header {
-	text-transform: uppercase;
+.container_header {
 	width: 95%;
-	height: 3rem;
-	line-height: 1.5rem;
 	font-weight: 200;
 	color: #969696;
-	margin-bottom: 0;
-}
-
-.typography_header {
 	border-bottom: 1px solid;
+	margin-bottom: 3rem;
 }
 
-.typography_group {
-	margin-top: 3rem;
+.container_group {
+	width: 95%;
 }
 
-.typography {
-	clear: both;
-}
-
-.header, .content {
+.container, .header, .content {
 	float: left;
 }
 
 .header {
-	width: 15%;
+	width: 20%;
 	color: #969696;
 }
 
 .content {
-	width: 80%
+	width: 80%;
+	color: #272522;
+}
+
+tr {
+	height: 3rem;
+}
+
+th, .table1 td.col3 {
+	font-weight: 700;
 }
 
 th, td {
 	font-size: 1.313rem;
-	height: 3rem;
 	text-align: center;
 	vertical-align: middle;
 }
 
-.table_group {
-	margin-top: 1.5rem;
-	width: 95%;
+.col1 {
+	width: 40%;
+	padding-left: 5%;
+}
+
+.col2, .col3, .col4 {
+	width: 15%;
+}
+
+.col5 {
+	width: 15%;
+}
+
+.table1, .table2 {
+	position: relative;
+	width: 100%;
+}
+
+.table1 {
+	top: -1px;
+	margin-bottom: 7.5rem;
 }
 
 .table1 .row1 {
 	background-color: #f8f8f8;
+	border-top: 1px solid #e2e1e1;
 }
 
-th.align_left {
+.table1 tr {
+	border-bottom: 1px solid #e2e1e1;
+}
+
+.align_left {
 	text-align: left;
 }
 
-.col1 {
-	
+.table2 {
+	top: -2px;
+	margin-bottom: 6rem;
 }
 
-.col2, .col3, .col4 {
-	
+.table2 td{
+	border-bottom: 1px dotted #e2e1e1;
 }
 
-.col5 {
-	
+.table2 .row2 th, .table2 .row3 td {
+	border-bottom: 1px solid #e2e1e1;
+}
+
+.table2 .row1, .table2 .row4 th, .table2 .row5 td{
+	border-bottom: 1px solid #505050;
+}
+
+.list {
+	position: relative;
+	top: -2px;
+	color: #333741;
+}
+
+[class$="_list"] {
+	float: left;
+}
+
+ul li::before {
+	content: "•";
+	color: #9b9a9a;
+	padding-right: 0.5rem;
+}
+
+ul li ul, ol li ol, dl {
+	margin-bottom: 1.5rem;
+}
+
+ul li ul li::before {
+	content: "⚬";
+	color: #9b9a9a;
+	padding-left: 1rem;
+	padding-right: 0.5rem;
+}
+
+.unordered_list, .ordered_list {
+	width: 15%;
+	padding-right: 1rem;
+}
+
+.definition_list {
+	width: 70%;
+}
+
+ol li::before {
+	content: counter(item)".";
+	counter-increment: item;
+	padding-right: 0.5rem;
+}
+
+ol li ol li::before {
+	content: counter(item)".";
+	counter-increment: item;
+	color: #9b9a9a;
+	padding-left: 1rem;
+	padding-right: 0.5rem;
+}
+
+dt+dd {
+	padding-left: 2rem;
 }
