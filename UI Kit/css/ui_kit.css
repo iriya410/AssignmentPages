@@ -1,0 +1,99 @@
+html {
+	font-size: 14px;
+}
+body {
+	font: 1rem/1.5 "Spoqa Han Sans", sans-serif;
+	color: #2c2c2c;
+	background-image: linear-gradient(180deg, transparent 95%, #7045cf 95%);
+	background-size: 1px 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: -0.025rem;
+	font-weight: 700;
+}
+
+h1 { font-size: 3.9rem; }
+h2 { font-size: 2.97rem; }
+h3 { font-size: 2.26rem; }
+h4 { font-size: 1.72rem; }
+h5 { font-size: 1.313rem; }
+
+h1, h2, .h1, .h2 { line-height: 4.5rem; }
+h3, h4, h5, .h3, .h4, .h5 { line-height: 3rem; }
+
+section {
+	float: left;
+	width: 50%;
+	min-width: 640px;
+}
+
+.section_header {
+	text-transform: uppercase;
+	width: 95%;
+	height: 3rem;
+	line-height: 1.5rem;
+	font-weight: 200;
+	color: #969696;
+	margin-bottom: 0;
+}
+
+.typography_header {
+	border-bottom: 1px solid;
+}
+
+.typography_group {
+	margin-top: 3rem;
+}
+
+.typography {
+	clear: both;
+}
+
+.header, .content {
+	float: left;
+}
+
+.header {
+	width: 15%;
+	color: #969696;
+}
+
+.content {
+	width: 80%
+}
+
+th, td {
+	font-size: 1.313rem;
+	height: 3rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table_group {
+	margin-top: 1.5rem;
+	width: 95%;
+}
+
+.table1 .row1 {
+	background-color: #f8f8f8;
+}
+
+th.align_left {
+	text-align: left;
+}
+
+.col1 {
+	
+}
+
+.col2, .col3, .col4 {
+	
+}
+
+.col5 {
+	
+}
