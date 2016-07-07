@@ -7,14 +7,13 @@
 }
 
 [class="grid"] {
-	width: 940px;
+	width: 960px;
+	padding: 0 10px;
 	position: absolute;
-	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0%);
 }
 
-.grid.row { width: 100%; }
 .grid.row::after {
 	content: "";
  	display: block;
@@ -45,4 +44,9 @@
 
 .grid_margin_top {
 	margin-top: 1.5rem;
+}
+
+body {
+	background-image: linear-gradient(180deg, transparent 95%, #7045cf 95%);
+	background-size: 1px 1.5rem;
 }

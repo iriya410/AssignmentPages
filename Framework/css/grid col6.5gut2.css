@@ -26,7 +26,7 @@
 .grid.col_11 { width: 91.5%;}
 .grid.col_12 { width: 100%; }
 
-.grid [class*="col"]:not(:last-child) {
+.grid [class*="col_"]:not(:last-child) {
 	margin-right: 2%;
 }
 /*------------------------------------------*/
