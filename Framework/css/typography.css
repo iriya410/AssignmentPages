@@ -1,0 +1,54 @@
+/*------------------------*/
+/* resposive font styling */
+/*------------------------*/
+
+/* "Spoqa Han Sans" */
+/*@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);*/
+
+html {
+	font-size: 2vw;
+	/*font-size: calc(10px+(24-10)*(100vw-500)/(1200-500));*/
+}
+
+@media screen and (max-width: 31.25em) {
+	html {
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	html {
+		font-size: 24px;
+	}
+}
+
+body {
+	font: 1rem/1.5 "Spoqa Han Sans", sans-serif;
+
+	background-image: linear-gradient(180deg, transparent 95%, #7045cf 95%);
+	background-size: 1px 1.5rem;
+}
+
+h1 { font-size: 3.051rem; }
+h2 { font-size: 2.441rem; }
+h3 { font-size: 1.953rem; }
+h4 { font-size: 1.562rem; }
+h5 { font-size: 1.25rem;  }
+h6 { font-size: 1rem;     }
+
+h1, h2     { height: 4.5rem; line-height: 4.5rem; }
+h3, h4, h5 { height: 3rem;   line-height: 3rem;   }
+h6         { height: 1.5rem; line-height: 1.5rem; }
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+p {
+	font-weight: 400;
+}

@@ -1,0 +1,32 @@
+/*------------------------------------------*/
+/* 12 columns grid - column 6.5%, gutter 2% */
+/*------------------------------------------*/
+.grid {
+	float: left;
+	min-height: 1.5rem;
+}
+
+.grid.row { width: 100%; }
+.grid.row::after {
+	content: "";
+ 	display: block;
+	clear: both;
+}
+
+.grid.col_1  { width: 6.5vw; }
+.grid.col_2  { width: 15vw;  }
+.grid.col_3  { width: 23.5vw;}
+.grid.col_4  { width: 32vw;  }
+.grid.col_5  { width: 40.5vw;}
+.grid.col_6  { width: 49vw;  }
+.grid.col_7  { width: 57.5vw;}
+.grid.col_8  { width: 66vw;  }
+.grid.col_9  { width: 74.5vw;}
+.grid.col_10 { width: 83vw;  }
+.grid.col_11 { width: 91.5vw;}
+.grid.col_12 { width: 100vw; }
+
+.grid [class*="col"]:not(:last-child) {
+	margin-right: 2vw;
+}
+/*------------------------------------------*/
