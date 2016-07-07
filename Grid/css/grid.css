@@ -1,0 +1,49 @@
+/*--------------------------------------------*/
+/* 12 columns grid - column 60px, gutter 20px */
+/*--------------------------------------------*/
+.grid {
+	float: left;
+	min-height: 1.5rem;
+}
+
+[class="grid"] {
+	width: 960px;
+	margin: 0 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.grid.row { width: 100%; }
+.grid.row::after {
+	content: "";
+ 	display: block;
+	clear: both;
+}
+
+.grid.col_1  { width: 60px; }
+.grid.col_2  { width: 140px;}
+.grid.col_3  { width: 220px;}
+.grid.col_4  { width: 300px;}
+.grid.col_5  { width: 380px;}
+.grid.col_6  { width: 460px;}
+.grid.col_7  { width: 540px;}
+.grid.col_8  { width: 620px;}
+.grid.col_9  { width: 700px;}
+.grid.col_10 { width: 780px;}
+.grid.col_11 { width: 860px;}
+.grid.col_12 { width: 940px;}
+
+.grid [class*="col"]:not(:last-child) {
+	margin-right: 20px;
+}
+/*--------------------------------------------*/
+
+.content {
+	background-color: #59acf4;
+}
+
+.grid_margin_top {
+	margin-top: 1.5rem;
+}
