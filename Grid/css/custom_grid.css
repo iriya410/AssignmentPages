@@ -6,7 +6,7 @@ body.overlay_grid::after {
 	position: absolute;
 	top: 0%;
 	left: 50%;
-	height: 2544px;
+	height: 2520px;
 	min-height: 100vh;
 	transform: translateX(-50%);
 }
