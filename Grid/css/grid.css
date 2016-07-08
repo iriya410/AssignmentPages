@@ -7,8 +7,7 @@
 }
 
 [class="grid"] {
-	width: 960px;
-	padding: 0 10px;
+	width: 940px;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0%);
