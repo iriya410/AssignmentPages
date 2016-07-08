@@ -1,0 +1,47 @@
+.content {
+	height: 1.5rem;
+	line-height: 1.5rem;
+	background-color: #BCBCBC;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+nav {
+	height: 4.5rem;
+	background-color: #7F7F7F;
+	padding-top: 1.5rem;
+}
+
+.MainNews {
+	height: 37.5rem;
+}
+
+.SubNews {
+	height: 24rem;
+}
+
+.Happening, .Explore {
+	height: 3rem;
+}
+
+.Happening_1_1 {
+	height: 18rem;
+}
+
+.Happening_1_2 {
+	height: 30rem;
+}
+
+.Happening_1_2_2 {
+	height: 25.5rem;
+}
+
+footer {
+	height: 19.5rem;
+	background-color: #7F7F7F;
+	padding-top: 4.5rem;
+}
+
+.SiteMap {
+	height: 6rem;
+}
