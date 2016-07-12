@@ -1,25 +1,25 @@
 /*------------------------*/
 /* Grid Container Module  */
 /*------------------------*/
-body.overlay_grid::after {
+.overlay_grid::after {
 	content: "";
 	position: absolute;
-	top: 0%;
-	left: 50%;
-	height: 2520px;
-	min-height: 100vh;
-	transform: translateX(-50%);
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-body.overlay_grid::after,
 .container {
+	position: relative;
 	width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-body.overlay_grid::after {
-	background: url(45_20.png), linear-gradient( transparent 95%, #7F7F7F 95%);
+.overlay_grid::after {
+	background: linear-gradient( to right, hsla(205, 100%, 50%, 0.5) 45px, hsla(205, 100%, 50%, 0.25) 46px), linear-gradient( transparent 95%, #7F7F7F 95%);
 	background-size: 65px 24px, 1px 24px;
 }
 
