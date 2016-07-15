@@ -1,6 +1,6 @@
 /* img 하단 공백 제거 */
 img {
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 /* 박스모델에 보더 설정시 레이아웃이 무너짐을 방지 */
@@ -23,6 +23,17 @@ ol.reset-list {
 .image-overflow-group img + *,
 img.image-overflow + * {
   overflow: hidden;
+}
+
+/* 이미지 비율 고정 */
+img.flex-img {
+  width: 100%;
+  height: auto;
+}
+
+img.horizontal-center-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 /* IR 배경이미지 기법 */

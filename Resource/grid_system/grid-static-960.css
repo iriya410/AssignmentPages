@@ -1,0 +1,94 @@
+/*------------------------*/
+/* Grid Container Module  */
+/*------------------------*/
+body.overlay_grid::after {
+	content: "";
+	position: absolute;
+	z-index: 100;
+	top: 0%;
+	left: 50%;
+	min-height: 100vh;
+	transform: translateX(-50%);
+}
+
+body.overlay_grid::after,
+.container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body.overlay_grid::after,
+.container.show_grid,
+.container.hover_hide_grid {
+	background: url(10_60_10.png), linear-gradient( transparent 95%, #7F7F7F 95%);
+	background-size: 80px 24px, 1px 24px;
+}
+
+.container.hover_hide_grid:hover {
+	background: none;
+}
+
+.row::after {
+	content: "";
+ 	display: block;
+	clear: both;
+}
+
+.row [class*="col_"] {
+	float: left;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+/*.row .col_1  { width: 60px; }
+.row .col_2  { width: 140px;}
+.row .col_3  { width: 220px;}
+.row .col_4  { width: 300px;}
+.row .col_5  { width: 380px;}
+.row .col_6  { width: 460px;}
+.row .col_7  { width: 540px;}
+.row .col_8  { width: 620px;}
+.row .col_9  { width: 700px;}
+.row .col_10 { width: 780px;}
+.row .col_11 { width: 860px;}
+.row .col_12 { width: 940px;}*/
+
+.row .col_1  { width: 48px; }
+.row .col_2  { width: 128px;}
+.row .col_3  { width: 208px;}
+.row .col_4  { width: 288px;}
+.row .col_5  { width: 368px;}
+.row .col_6  { width: 448px;}
+.row .col_7  { width: 528px;}
+.row .col_8  { width: 608px;}
+.row .col_9  { width: 688px;}
+.row .col_10 { width: 768px;}
+.row .col_11 { width: 848px;}
+.row .col_12 { width: 928px;}
+
+/*.row .push_1  { px; }
+.row .push_2  { px; }
+.row .push_3  { px; }
+.row .push_4  { px; }
+.row .push_5  { px; }
+.row .push_6  { px; }
+.row .push_7  { px; }
+.row .push_8  { px; }
+.row .push_9  { px; }
+.row .push_10 { px; }
+.row .push_11 { px; }
+.row .push_12 { px; }
+
+.row .pull_1  { px; }
+.row .pull_2  { px; }
+.row .pull_3  { px; }
+.row .pull_4  { px; }
+.row .pull_5  { px; }
+.row .pull_6  { px; }
+.row .pull_7  { px; }
+.row .pull_8  { px; }
+.row .pull_9  { px; }
+.row .pull_10 { px; }
+.row .pull_11 { px; }
+.row .pull_12 { px; }*/

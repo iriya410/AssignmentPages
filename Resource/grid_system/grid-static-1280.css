@@ -1,0 +1,82 @@
+.grid_container::after {
+	content: "";
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+}
+
+.grid_container.show_grid::after {
+	background: linear-gradient( to right, hsla(0, 50%, 50%, 0.4) 130px,  transparent 130px),
+	            linear-gradient( transparent 26px, hsla(102, 100%, 50%, 0.6) 26px);
+	background-size: 160px 1px,
+	                 1px 27px;
+}
+
+.grid_container {
+	width: 1250px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.row [class*="col_"] { float: left; margin-right: 30px; }
+.row .last {margin-right: 0;}
+.row .col_1 {width: 130px;}
+.row .col_2 {width: 290px;}
+.row .col_3 {width: 450px;}
+.row .col_4 {width: 610px;}
+.row .col_5 {width: 770px;}
+.row .col_6 {width: 930px;}
+.row .col_7 {width: 1090px;}
+.row .col_8 {width: 1250px;}
+
+/* push, pull */
+
+.row [class*="push_"], .row [class*="pull_"] { position: relative; }
+.row .push_1 {left: 160px;}
+.row .push_2 {left: 320px;}
+.row .push_3 {left: 480px;}
+.row .push_4 {left: 640px;}
+.row .push_5 {left: 800px;}
+.row .push_6 {left: 960px;}
+.row .push_7 {left: 1120px;}
+.row .push_8 {left: 1280px;}
+
+.row .pull_1 {right: 160px;}
+.row .pull_2 {right: 320px;}
+.row .pull_3 {right: 480px;}
+.row .pull_4 {right: 640px;}
+.row .pull_5 {right: 800px;}
+.row .pull_6 {right: 960px;}
+.row .pull_7 {right: 1120px;}
+.row .pull_8 {right: 1280px;}
+
+/* prefix, suffix - margin, padding */
+
+.row .prefix_1 {margin-left: 160px;}
+.row .prefix_2 {margin-left: 320px;}
+.row .prefix_3 {margin-left: 480px;}
+.row .prefix_4 {margin-left: 640px;}
+.row .prefix_5 {margin-left: 800px;}
+.row .prefix_6 {margin-left: 960px;}
+.row .prefix_7 {margin-left: 1120px;}
+.row .prefix_8 {margin-left: 1280px;}
+
+.row .suffix_1 {margin-right: 160px;}
+.row .suffix_2 {margin-right: 320px;}
+.row .suffix_3 {margin-right: 480px;}
+.row .suffix_4 {margin-right: 640px;}
+.row .suffix_5 {margin-right: 800px;}
+.row .suffix_6 {margin-right: 960px;}
+.row .suffix_7 {margin-right: 1120px;}
+.row .suffix_8 {margin-right: 1280px;}

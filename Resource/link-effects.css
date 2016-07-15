@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* 기본 링크 */
+a {
+	text-decoration: none;
+	/*padding-bottom: 2px;*/
+	padding-bottom: 0.125rem;
+	/*border-bottom: 1px solid;*/
+	border-bottom: 0.0625rem solid;
+}
+
+/* Fade In/Out */
+.fade_bg {
+	display: inline-block;
+	padding: 0.25em 0.375em;
+	transition: all 0.25s;
+	border-bottom: none;
+}
+
+.fade_bg.round {
+	border-radius: 0.25em;
+}
+
+.fade_bg:hover, .fade_bg:focus {
+	color: #ffffff;
+	background-color: #0094FF;
+}
+
+.fade_bg:focus {
+	outline: none;	
+}
+
+/* slide-from- */
+a[class*="slide-"] {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: bottom;
+	position: relative;
+	padding: 0.06em 0.12em;
+	border-bottom: none;
+}
+a[class*="slide-"]::after {
+	content: attr(data-linktext);
+	position: absolute;
+	width: 100%;
+	background-color: #0094FF;
+	color: #ffffff;
+	transition: all 0.45s;
+	text-align: center;
+}
+
+a.slide-from-left::after {
+	left: -110%;
+}
+
+a.slide-from-left:hover::after,
+a.slide-from-left:focus::after {
+	left: 0;
+}
+
+a.slide-from-right::after {
+	right: -110%;
+}
+
+a.slide-from-right:hover::after,
+a.slide-from-right:focus::after {
+	right: 0;
+}
+
+a.slide-from-top::after {
+	left: 0;
+	top: -110%;
+}
+
+a.slide-from-top:hover::after,
+a.slide-from-top:focus::after {
+	top: 0;
+}
+
+a.slide-from-bottom::after {
+	left: 0;
+	bottom: -110%;
+}
+
+a.slide-from-bottom:hover::after,
+a.slide-from-bottom:focus::after {
+	bottom: 0;
+}
+
+/* fade-underline */
+.fade-underline {
+	border-bottom: 2px solid transparent;
+
+	/* 장면 전환: A -> B, B -> A */
+	/* transition: property duration timing-function delay; */
+	transition: border-bottom-color 0.6s ease-in 0ms;
+}
+.fade-underline:hover,
+.fade-underline:focus {
+	border-bottom-color: currentColor;
+}
+
+/* underline-from- */
+a[class*="underline-"] {
+	position: relative;
+	border-bottom: none;
+}
+a[class*="underline-"]::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	border-bottom: 2px solid currentColor;
+	transition: all 0.3s;
+}
+
+/* underline-from-left */
+a.underline-from-left::after {
+	right: 100%;
+}
+a.underline-from-left:hover::after,
+a.underline-from-left:focus::after {
+	right: 0;
+}
+
+/* underline-from-right */
+a.underline-from-right::after {
+	left: 100%;
+}
+a.underline-from-right:hover::after,
+a.underline-from-right:focus::after {
+	left: 0;
+}
+
+/* underline-from-center */
+a.underline-from-center::after {
+	left: 50%;
+	right: 50%;
+}
+a.underline-from-center:hover::after,
+a.underline-from-center:focus::after {
+	left: 0;
+	right: 0;
+}
