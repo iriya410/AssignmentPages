@@ -164,15 +164,17 @@ ul li ul li::before {
 	width: 70%;
 }
 
-ol li::before {
-	content: counter(item)".";
+ol {
+	counter-reset: item;
+}
+
+li::before {
+	content: counters(item,".") " ";
 	counter-increment: item;
 	padding-right: 0.5rem;
 }
 
-ol li ol li::before {
-	content: counter(item)".";
-	counter-increment: item;
+li ol li {
 	color: #9b9a9a;
 	padding-left: 1rem;
 	padding-right: 0.5rem;
