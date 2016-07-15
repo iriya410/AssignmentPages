@@ -1,0 +1,612 @@
+body {
+	font-family: "Varela Round";
+}
+
+h2, h3, p {
+	margin: 0;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+nav {
+	height: 80px;
+	line-height: 80px;
+}
+
+nav .nav_logo {
+	padding-left: 30px;
+}
+
+nav .logo {
+	margin-left: 30px;
+	position: relative;
+	top: -2px;
+}
+
+nav [class*="nav_menu_"] {
+	float: left;
+	cursor: pointer;
+}
+
+nav .nav_menu span {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+}
+
+nav .nav_button {
+	text-align: right;
+	padding-right: 30px;
+}
+
+nav [class*="nav_button_"] {
+	position: relative;
+	margin-left: 40px;
+}
+
+nav .nav_button_bag::after {
+	content: "3";
+	position: absolute;
+	top: -6px;
+	right: -5px;
+	border-radius: 50%;
+	background-color: #1F4BA5;
+	color: #ffffff;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+.slider_main {
+	position: relative;
+	height: 480px;
+	background-image: url(../images/photo-slider-main.png);
+	background-size: 720px 480px;
+}
+
+
+
+.slider_button {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	transform: translateY(-50%);
+}
+.left_arrow_button {
+	color: #bdbdbd;
+	top: 50%;
+	left: 30px;
+}
+.right_arrow_button {
+	color: #8f8f8f;
+	top: 50%;
+	right: 30px;
+}
+
+
+
+.slider_article {
+	position: absolute;
+	top: 50%;
+	left: 120px;
+	width: 230px;
+	transform: translateY(-50%);
+}
+span.category {
+	font-size: 12px;
+	font-weight: 700;
+	color: #1F4BA5;
+	font-family: "Oswald";
+}
+.slider h2 {
+	font-size: 36px;
+	line-height: 36px;
+	margin-top: 28px;
+	margin-bottom: 20px;
+}
+.slider p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #868686;
+	margin: 0;
+	margin-bottom: 36px;
+}
+.slider .price_buy {
+	position: relative;
+	width: 165px;
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 30px;
+	color: #ffffff;
+	background-color: #1F4BA5;
+}
+.slider .price_buy :first-child {
+	display: inline-block;
+	font-family: "Oswald";
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	padding-right: 20px;
+	border-right: 1px solid #365dae;
+}
+.slider .price_buy :last-child {
+	position: relative;
+	top: -1px;
+	color: #ffffff;
+	margin-left: 20px;
+}
+
+
+
+.slider ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.slider [class*="side_"] {
+	display: inline-block;
+	width: 100%;
+	height: 120px;
+	vertical-align: middle;
+}
+.slider .side_1 {
+	background-image: url(../images/photo-slider-slides-04.png);
+	background-size: 240px 120px;
+}
+.slider .side_1:hover, .slider .side_1:focus {
+	background-image: linear-gradient( to right, hsla(220, 68%, 38%, 1.0) 10px, hsla(0, 0%, 100%, 0.5) 10px), url(../images/photo-slider-slides-04.png);
+	background-size: 240px 120px, 240px 120px;
+}
+.slider .side_2 {
+	background-image: url(../images/photo-slider-slides-03.png);
+	background-size: 240px 120px;
+}
+.slider .side_2:hover, .slider .side_2:focus {
+	background-image: linear-gradient( to right, hsla(220, 68%, 38%, 1.0) 10px, hsla(0, 0%, 100%, 0.5) 10px), url(../images/photo-slider-slides-03.png);
+	background-size: 240px 120px, 240px 120px;
+}
+.slider .side_3 {
+	background-image: url(../images/photo-slider-slides-02.png);
+	background-size: 240px 120px;
+}
+.slider .side_3:hover, .slider .side_3:focus {
+	background-image: linear-gradient( to right, hsla(220, 68%, 38%, 1.0) 10px, hsla(0, 0%, 100%, 0.5) 10px), url(../images/photo-slider-slides-02.png);
+	background-size: 240px 120px, 240px 120px;
+}
+.slider .side_4 {
+	background-image: url(../images/photo-slider-slides-01.png);
+	background-size: 240px 120px;
+}
+.slider .side_4:hover, .slider .side_4:focus {
+	background-image: linear-gradient( to right, hsla(220, 68%, 38%, 1.0) 10px, hsla(0, 0%, 100%, 0.5) 10px), url(../images/photo-slider-slides-01.png);
+	background-size: 240px 120px, 240px 120px;
+}
+
+.banners [class*="banner_"], [class*="featured_"], [class*="blog_"] {
+	text-align: center;
+	height: 240px;
+}
+.banners .banner_women {
+	padding-top: 120px;
+	background-image: url(../images/photo-banners-women.png);
+	background-size: 480px 240px;
+}
+.banner_women h2 {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+.banner_women p {
+	font-size: 14px;
+	line-height: 22px;
+	color: #868686;
+}
+.banners .banner_men {
+	padding-top: 40px;
+	background-image: url(../images/photo-banners-men.png);
+	background-size: 240px 240px;
+}
+.banner_men h2 {
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 120px;
+}
+.banners .banner_accessories {
+	padding-top: 140px;
+	background-image: url(../images/photo-banners-accessories.png);
+	background-size: 240px 240px;
+}
+.banner_accessories h2 {
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 20px;
+}
+
+
+[class*="featured_"], [class*="blog_"] {
+	position: relative;
+	padding-top: 28px;
+	/*border-right: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;*/
+}
+.featured_header h2, .blog_header h2 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #1F4BA5;
+	font-family: "Oswald";
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.featured_header p, .blog_header p {
+	font-size: 14px;
+	line-height: 18px;
+	color: #888888;
+}
+[class*="featured_"] h3 {
+	font-size: 12px;
+	height: 30px;
+	line-height: 16px;
+	color: #222222;
+}
+[class*="featured_"] .image {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+[class*="featured_"] .price {
+	position: relative;
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+[class*="featured_"] .price span {
+	font-size: 12px;
+	font-weight: 700;
+	font-family: "Oswald";
+}
+[class*="featured_"] .price img {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+[class*="featured_"] .price .basic_price {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 8px;
+	color: #a1a1a1;
+	text-decoration: line-through;
+}
+
+.blog time {
+	font-size: 12px;
+	color: #8D8D8D;
+	font-family: "PT Serif";
+	font-style: italic;
+}
+
+.blog cite {
+	font-size: 10px;
+	font-family: "PT Serif";
+	color: #9B9B9B;
+}
+
+.blog cite span {
+	font-weight: 700;
+	font-style: normal;
+}
+
+.blog .blog_1:hover {
+	color: #ffffff;
+	background-image: url(../images/photo-blog-01.png);
+	background-size: 240px 240px;
+}
+
+.blog .blog_1, .blog .blog_2 {
+	padding-top: 40px;
+}
+
+.blog .blog_1 time, .blog .blog_2 time {
+	display: inline-block;
+	margin-bottom: 14px;
+}
+
+.blog .blog_1 h3, .blog .blog_2 h3 {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 14px;
+}
+
+.blog .blog_3, .blog .blog_4 {
+	height: 120px;
+	padding-top: 20px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.blog .blog_3 time, .blog .blog_4 time {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.blog .blog_3 h3, .blog .blog_4 h3 {
+	font-size: 14px;
+}
+
+.testimonials, .about {
+	height: 480px;
+	padding-top: 35px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+
+.ta [class*="_header"] {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+}
+
+.ta .quote {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.ta .text {
+	font-size: 18px;
+	line-height: 30px;
+	color: #868686;
+	font-family: "PT Serif";
+	font-style: italic;
+}
+
+.ta [class*="_header"] .left {
+	float: left;
+}
+
+.ta [class*="_header"] .right {
+	float: right;
+}
+
+.ta [class*="_header"] h2 {	
+	font-size: 18px;
+	line-height: 18px;
+	color: #1F4BA5;
+	font-family: "Oswald";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ta [class*="_header"] span {
+	font-size: 14px;
+	line-height: 30px;
+	color: #868686;
+	font-family: "Varela Round";
+	display: inline-block;
+}
+
+.ta .text {
+	display: block;
+}
+
+.testimonials .photo {
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
+.testimonials .photo span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.testimonials .photo .info {
+	line-height: 60px;
+	text-align: left;
+	margin-left: 18px;
+}
+
+.testimonials .photo .people {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.testimonials .photo .from {
+	font-size: 12px;
+	line-height: 18px;
+	color: #B8B8B8;
+	font-family: "PT Serif";
+	font-style: italic;
+}
+
+.inf {
+	display: inline-block;
+	width: 480px;
+	margin-top: 30px;
+	position: relative;
+	left: -30px;
+}
+
+.inf .col_1 {
+	height: 60px;
+}
+
+.inf .image {
+	width: 60px;
+}
+
+.inf .ml_1 {
+	margin-left: 60px;
+}
+
+.inf .ml_2 {
+	margin-left: 120px;
+}
+
+.about h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #868686;
+	font-family: "PT Serif";
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.about .text {
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "Varela Round";
+	font-style: normal;
+}
+
+.brands [class*="brand_"] {
+	display: inline-block;
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	/*border-top: 1px solid #ECECEC;
+	border-left: 1px solid #ECECEC;*/
+}
+
+.brands [class*="brand_"]:nth-child(1) {
+	/*border-right: 1px solid #ECECEC;*/
+}
+
+.brand_header h2 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #1f4ba5;
+	font-family: "Oswald";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.footer {
+	background-color: #222222;
+}
+
+.footer .categories {
+	height: 60px;
+	line-height: 60px;
+	/*border-bottom: 1px solid #ECECEC;*/
+	text-align: center;
+}
+
+.footer .categories a {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	color: #ffffff;
+	margin-right: 75px;
+}
+
+.footer .categories a:not(:last-child)::after {
+	content: "•";
+	color: #656565;
+	position: absolute;
+	top: 0px;
+	right: -42.5px;
+}
+
+.footer .categories :last-child {
+	margin-right: 0;
+}
+
+.footer .copyright {
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+}
+
+.footer .mailing {
+	height: 120px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.footer .mailing .sign {
+	display: inline-block;
+	width: 360px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #393939;
+	margin-bottom: 20px;
+}
+
+.sign img {
+	display: inline-block;
+}
+
+.sign input {
+	width: 260px;
+	height: 30px;
+	background-color: #393939;
+	border: none;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.sign input:placeholder-shown {
+	font-size: 12px;
+	color: #757575;
+	font-family: "PT serif";
+	font-style: italic;
+}
+
+.mailing .link a {
+	font-size: 12px;
+	line-height: 24px;
+	color: #959595;
+	margin-right: 20px;
+}
+
+.mailng .link :last-child {
+	margin-right: 0;
+}
+
+.footer .socials, .footer .payments  {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.footer .socials a {
+	display: inline-block;
+	margin-right: 35px;
+}
+
+.footer .socials :last-child, .footer .payments :last-child {
+	margin-right: 0;
+}
+
+.footer .payments a {
+	display: inline-block;
+	margin-right: 20px;
+}
