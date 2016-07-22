@@ -58,7 +58,7 @@ img.horizontal-center-img {
 }
 
 /* 스크린리더에서 읽을 수 있는 숨김 텍스트 */
-.readable-hidden {
+.readable_hidden {
   overflow: hidden;
   position: absolute;
   clip:     rect(0,0,0,0);
@@ -69,7 +69,7 @@ img.horizontal-center-img {
   border:   0;
   padding:  0;
 }
-.readable-hidden.focusable:focus {
+.readable_hidden.focusable:focus {
   overflow: visible;
   position: static;
   clip:     auto;
