@@ -1,0 +1,50 @@
+$px: px
+$max_screen_width: 1280
+$min_screen_width: 480
+$diff_screen_width: $max_screen_width - $min_screen_width
+$max_font_size: 20
+$min_font_size: 12
+$diff_font_size: $max_font_size - $min_font_size
+
+$sw_p_fs: $diff_screen_width / $diff_font_size
+
+$font_scale: 1.25
+$line_height: 1.5
+
+html
+	font-size: $min_font_size + $px
+
+	@for $i from 1 through $diff_font_size - 1
+		@media (min-width: $min_screen_width + ($sw_p_fs * $i) + 1 + $px) and (max-width: $min_screen_width + ($sw_p_fs * ($i + 1)) + $px)
+			font-size: $min_font_size + $i + $px
+
+	@media (min-width: $max_screen_width+1+$px)
+		font-size: $max_font_size+$px
+
+h1
+	font-size: 1rem * $font_scale * $font_scale * $font_scale * $font_scale * $font_scale
+	line-height: 4.5rem
+
+h2
+	font-size: 1rem * $font_scale * $font_scale * $font_scale * $font_scale
+	line-height: 4.5rem
+
+h3
+	font-size: 1rem * $font_scale * $font_scale * $font_scale
+	line-height: 3rem
+
+h4
+	font-size: 1rem * $font_scale * $font_scale
+	line-height: 3rem
+
+h5
+	font-size: 1rem * $font_scale
+	line-height: 1.5rem
+
+h6, p
+	font-size: 1rem
+	line-height: 1.5rem
+
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+		bottom: 1.5rem
