@@ -1,0 +1,26 @@
+$columns: 12
+
+.row
+	display: flex
+	flex: 0 1 auto
+	box-sizing: border-box
+
+[class*="col"]
+	display: flex
+
+.col_1_1
+	flex: 0 0 100%
+	max-width: 100%
+
+@for $i from 1 through $columns
+	@for $j from 1 through $i
+		@if $j != $i
+			.#{"col_"+ $j + "_" + $i}
+				flex: 0 0 ($j * 100 / $i)+%
+				max-width: ($j * 100 / $i)+%
+
+@for $i from 1 through $columns
+	@for $j from 1 through $i
+		@if $j != $i
+			.#{"offset_"+ $j + "_" + $i}
+				margin-left: ($j * 100 / $i)+%

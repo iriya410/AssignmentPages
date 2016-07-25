@@ -1,0 +1,455 @@
+body, h1, h2, h3, p
+	margin: 0
+	line-height: 1.5
+
+body
+	background:
+		color: #003652
+
+	color: #ffffff
+	font-family: "Lato", sans-serif
+	font-weight: 300
+	text-align: center
+
+button
+	width: 100%
+	border: 0
+	padding: 0
+	background: none
+	&:hover
+		cursor: pointer
+
+a
+	color: #ffffff
+	text-decoration: none
+
+.header, .contents, .footer .row
+	max-width: 1200px
+	margin: 0 auto
+
+.header
+	width: 100%
+	background:
+		image: url(../img/header/sea.png)
+		position: center top
+		size: auto 60%
+		repeat: no-repeat
+	h1
+		position: relative
+		background:
+			image: url(../img/header/logo-header.png)
+			position: center center
+			repeat: no-repeat
+		a
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 200px
+			height: 60px
+	nav
+		position: relative
+		button
+			display: block
+
+	@media (max-width: 600px)
+		h1
+			padding-bottom: 30%
+
+		hr
+			margin: 0 10vw
+			margin-bottom: 5vh
+		nav
+			margin-bottom: 45vh
+			button
+				padding-bottom: 35%
+				background-repeat: no-repeat
+				background-position: center center
+	
+	.menu
+		background-image: url(../img/header/icon-hamberger.png)
+	.menu_list
+		display: none
+		position: fixed
+		list-style: none
+		li
+			display: inline-block
+			&:hover
+				font-weight: 700
+	
+	.search
+		background-image: url(../img/header/icon-search.png)
+
+	.payment
+		background-image: url(../img/header/icon-card.png)
+
+	article
+		text-transform: uppercase
+
+		h2
+			font-size: 3rem
+			font-weight: 100
+
+		p
+			padding: 0 2vw
+			font-size: 1.875rem
+			font-weight: 700
+
+		button
+			position: relative
+			margin:
+				top: 40px
+				bottom: 15%
+			border: 2px solid
+			width: 180px
+			height: 42px
+			color: #ffffff
+
+			img
+				position: relative
+				top: -2px
+				margin-right: 10px
+
+	@media (min-width: 601px)
+		h1
+			padding-bottom: 20%
+		hr
+			display: none
+		nav
+			margin-bottom: 20%
+			button
+				position: relative
+				padding-bottom: 20%
+				background-size: contain
+				background-repeat: no-repeat
+			span
+				clip: auto
+				display: inline-block
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				margin: 0
+				width: auto
+				height: auto
+				color: #ffffff
+				font-size: 1.2vw
+				text-transform: capitalize
+
+		.menu
+			display: none
+		.menu_list
+			float: left
+			display: inline-block
+			position: relative
+			margin: 0
+			padding: 0
+			li
+				margin-right: 1em
+				a
+					color: #ffffff
+					font-size: 1.5vw
+					text-decoration: none
+		
+		.payment
+			span
+				left: 60%
+
+		article
+			p
+				padding: 0 20%
+
+	@media (min-width: 1201px)
+		.menu_list
+			li
+				a
+					font-size: 18px
+		nav
+			span
+				font-size: 18px
+			
+.contents
+	article
+		position: relative
+		background-color: #7f6162
+
+		h2
+			position: absolute
+			padding: 5%
+			font-size: 6.9vw
+			font-weight: 300
+
+	button
+		position: relative
+		margin-top: 10%
+		border: 0.6vw solid
+		width: 60%
+		color: #ffffff
+		font-size: 3vw
+
+	[class*="_img"]
+		position: relative
+		background-position: center
+		background-size: cover
+
+	.content_1, .content_8
+		h2
+			position: relative
+			width: 100%
+			padding: 0 15%
+			margin-top: 15%
+			font-size: 6vw
+			line-height: 1.2
+
+	.content_1
+		.content_img
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-01.png)
+
+	.content_2
+		h2
+			right: 0
+			width: 90%
+			text-align: right
+		.text_img
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-02.png)
+		.content_img 
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-03.png)
+
+	.content_3
+		h2
+			right: 0
+		.text_img 
+			padding-bottom: 71.875%
+			background-image: url(../img/content/Photo-04.png)
+
+	.content_4
+		h2
+			left: 0
+		.text_img
+			padding-bottom: 71.875%
+			background-image: url(../img/content/Photo-05.png)
+
+	.content_5
+		h2
+			left: 0
+			text-align: left
+		.text_img
+			padding-bottom: 150%
+			background-image: url(../img/content/Photo-06.png)
+
+	.content_6
+		.content_img_1
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-07.png)
+		.content_img_2
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-08.png)
+
+
+	.content_7
+		h2
+			right: 0
+			width: 60%
+			text-align: right
+		.text_img
+			padding-bottom: 150%
+			background-image: url(../img/content/Photo-09.png)
+
+	.content_8
+		.content_img
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-10.png)
+
+	.content_9
+		h2
+			width: 100%
+		.text_img
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-11.png)
+
+	.content_10
+		h2
+			font-size: 4.8vw
+			line-height: 1.2
+		.text_img_1
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-12.png)
+			
+			h2
+				left: 50%
+				bottom: 0
+				transform: translateX(-50%)
+				width: 70%
+		.text_img_2
+			padding-bottom: 53.125%
+			background-image: url(../img/content/Photo-13.png)
+			h2
+				width: 100%
+
+	.content_11
+		.content_img
+			padding-bottom: 37.5%
+			background-image: url(../img/content/Photo-14.png)
+
+	@media (min-width: 601px)
+		padding-bottom: 5%
+		
+		article
+			h2
+				font-size: 1.4vw
+
+		button
+			margin-top: 15%
+			border-width: 0.2vw
+			font-size: 1.2vw
+
+		.content_1, .content_8
+			h2
+				margin-top: 20%
+				font-size: 1.8vw
+
+		.content_3, .content_4
+			.text_img
+				padding-bottom: 70.9%
+
+		.content_5
+			.text_img 
+				padding-bottom: 141.8%
+
+		.content_6 
+			.content_img_1, .content_img_2
+				padding-bottom: 106.25%
+
+		.content_7
+			h2
+				left: 0
+				bottom: 20%
+				text-align: left
+			.text_img 
+				padding-bottom: 106.25%
+
+		.content_9
+			h2
+				text-align: right
+
+		.content_10
+			position: relative
+			left: 60%
+			h2
+				font-size: 1.4vw
+			.text_img_1
+				h2
+					top: 0
+					width: 100%
+
+		.content_11
+			position: relative
+			right: 40%
+			.content_img
+				padding-bottom: 35.4%
+
+	@media (min-width: 1201px)
+		article
+			h2 
+				font-size: 16px
+
+		button
+			border-width: 2px
+			font-size: 16px
+
+		.content_1, .content_8
+			h2
+				font-size: 22px
+
+		.content_10
+			h2
+				font-size: 16px
+
+.footer
+	background-color: #141728
+
+	.logo
+		position: relative
+		height: 120px
+		background-image: url(../img/footer/logo-footer.png)
+		background-position: center center
+		background-repeat: no-repeat
+		a
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 100%
+			height: 100%
+
+	.sns
+		padding: 0 10vw
+		a
+			padding-bottom: 5%
+			background-position: center
+			background-size: contain
+			background-repeat: no-repeat
+
+	.facebook 
+		background-image: url(../img/footer/fa-facebook-square.png)
+
+	.twitter
+		background-image: url(../img/footer/fa-twitter.png)
+
+	.youtube
+		background-image: url(../img/footer/fa-youtube-play.png)
+
+	.site_map
+		list-style: none
+		margin: 0
+		padding: 40px 15vw
+		text-align: left
+		li
+			margin-bottom: 1em
+			a
+				font-size: 4vw
+
+	@media (min-width: 601px)
+		.row
+			position: relative
+			padding-bottom: 10%
+
+		.logo
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			height: 30px
+			background-size: contain
+
+		.sns
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			padding: 0
+			a
+				padding-bottom: 1%
+
+		.site_map
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			margin: 0
+			padding: 0
+			text-align: center
+			li
+				display: inline-block
+				margin-right: 1.5vw
+				margin-bottom: 0
+				a
+					font-size: 1.2vw
+
+	@media (min-width: 1201px)
+		.site_map
+			li
+				a
+					font-size: 14px
