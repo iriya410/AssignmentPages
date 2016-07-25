@@ -395,13 +395,18 @@ h1, h2, h3, p {
 		display: inline-block;
 		position: absolute;
 		top: 50%;
-		left: 60%;
+		left: 50%;
 		transform: translate(-50%,-50%);
 		margin: 0;
 		width: auto;
 		height: auto;
 		color: #ffffff;
 		font-size: 1.2vw;
+		text-transform: capitalize;
+	}
+
+	.header nav .payment span {
+		left: 60%;
 	}
 
 	.header .menu_list {
