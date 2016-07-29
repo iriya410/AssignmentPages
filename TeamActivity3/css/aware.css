@@ -1,5 +1,6 @@
 body {
 	font-family: "Varela Round";
+	background: rgba(236, 236, 236, 0.4);
 }
 
 h2, h3, p {
@@ -14,6 +15,10 @@ a {
 button {
 	border: none;
 	background: none;
+}
+
+.grid_container {
+	background: #ffffff
 }
 
 nav {
