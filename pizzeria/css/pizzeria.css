@@ -1,0 +1,103 @@
+ul, .carousel .pages { margin-top: 0; margin-bottom: 0; padding-left: 0; list-style: none; }
+
+nav .logo, .carousel .page_1 a, .carousel .btn_left, .carousel .btn_right, .carousel .carousel_nav button { overflow: hidden; text-indent: -9999em; }
+
+nav h2, .carousel h2 { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); margin: -1px; border: 0; padding: 0; width: 1px; height: 1px; }
+
+h1, h2, h3 { margin: 0; }
+
+ul li { float: left; display: block; }
+
+a { display: block; color: #ffffff; line-height: 1.5; text-decoration: none; }
+
+button:hover { cursor: pointer; }
+
+.container { font-family: sans-serif; min-width: 320px; max-width: 1220px; min-height: 100vh; margin-left: auto; margin-right: auto; background-image: url(../img/bg.png); background-size: 100% auto; }
+
+header { display: flex; justify-content: space-between; align-items: center; position: relative; padding: 0 2.5vw; height: 48px; line-height: 48px; background: linear-gradient(90deg, transparent 25%, #c30007 25%, #c30007 75%, transparent 75%), #ed1c24; background-position: center, center; background-size: 60px, 100%; }
+
+header a { font-size: 12px; }
+
+header ul li:not(:first-child) { margin-left: 18px; }
+
+header ul a { font-size: 10px; }
+
+header::after { content: ""; position: absolute; min-width: 320px; top: 40px; left: 0; right: 0; border-bottom: 1px solid yellow; }
+
+@media (min-width: 960px) { header { padding: 0 5vw; background: linear-gradient(90deg, transparent 30%, #ed1c24 30%, #ed1c24 70%, transparent 70%), linear-gradient(90deg, transparent 25%, #c30007 25%, #c30007 75%, transparent 75%), #ed1c24; background-position: center, center, center; background-size: 50%, 6.25% , 100%; } }
+
+@media (min-width: 1220px) { header { padding: 0 5vw; background: linear-gradient(90deg, #ed1c24 0%, #ed1c24 100%) no-repeat, linear-gradient(90deg, #c30007 25%, transparent 25%, transparent 75%, #c30007 75%), #ed1c24; background-position: center, center, center; background-size: 250px 48px, 100px, 100%; }
+  header a { font-size: 16px; }
+  header ul a { font-size: 12px; } }
+
+nav { display: flex; justify-content: space-between; align-items: center; position: relative; border-bottom: 1px solid #c6c6c6; background: #ffffff; }
+
+nav::before { content: ""; box-sizing: border-box; position: absolute; top: 0; left: 50%; transform: translateX(-50%); border-width: 0 1px 1px 1px; border-style: solid; border-color: #c6c6c6; border-radius: 50% / 75%; border-top-left-radius: 0; border-top-right-radius: 0; width: 200px; height: 100px; background: #ffffff; }
+
+nav .logo { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 200px; height: 100px; background: url(../img/pizzeria.png) no-repeat, linear-gradient(#ffffff 58px, transparent 58px); background-position: center center, center; background-size: 70% auto, 100%; }
+
+nav button { width: 52px; margin: 7px; border: 1px solid #e2e2e2; border-radius: 2px; padding: 16px 12px; background: linear-gradient(#ffffff 0%, #ededed 100%); color: #ed1c24; font-size: 8px; line-height: 1; }
+
+nav ul { display: none; }
+
+nav .link_about { background: url(../img/icon_about.png) no-repeat; background-position: center 25%; }
+
+nav .link_menu { background: url(../img/icon_menu.png) no-repeat; background-position: center 25%; }
+
+nav .link_event { background: url(../img/icon_event.png) no-repeat; background-position: center 25%; }
+
+nav .link_community { background: url(../img/icon_community.png) no-repeat; background-position: center 25%; }
+
+@media (min-width: 960px) { nav { padding: 0 5vw; }
+  nav::before { width: 250px; height: 125px; }
+  nav .logo { width: 250px; height: 125px; background: url(../img/pizzeria.png) no-repeat, linear-gradient(#ffffff 70px, transparent 70px); background-position: center center, center; background-size: 70% auto, 100%; }
+  nav .btn_grid { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; margin: 15px 0; border: 0; padding: 0; width: 60px; height: 40px; font-size: 10px; background: url(../img/icon_hamburger.png) no-repeat; background-position: center 25%; }
+  nav .btn_menu { display: none; }
+  nav ul { display: block; }
+  nav ul a { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; margin: 15px 0; border: 0; padding: 0; width: 60px; height: 40px; font-size: 10px; color: #ed1c24; font-size: 10px; } }
+
+@media (min-width: 1220px) { nav { padding: 0 5vw; }
+  nav::before { width: 300px; height: 150px; }
+  nav .logo { width: 300px; height: 150px; } }
+
+.carousel { position: relative; padding-bottom: 90%; }
+
+.carousel .pages { position: absolute; width: 100%; height: 100%; overflow: hidden; }
+
+.carousel [class*="page_"] { position: absolute; top: 0; bottom: 0; }
+
+.carousel .page_1 { left: 0; right: 0; background: url(../img/pizza.png) no-repeat, url(../img/peppers.png) no-repeat, url(../img/buyabes.png) no-repeat; background-size: 43.75% auto, 20% auto, 62.5% auto; background-position: 80% 125%, 80% 20%, -20% 90%; }
+
+.carousel .page_1 a { position: absolute; top: 35%; left: 50%; transform: translateX(-50%); width: 62.5%; height: 35%; background: url(../img/delicious_pizzeria.png) no-repeat; background-size: 100% auto; background-position: center; }
+
+.carousel .page_2 { left: 100%; right: 0; }
+
+.carousel .page_3 { left: 100%; right: 0; }
+
+.carousel .btn_left { left: 0; }
+
+.carousel .btn_right { right: 0; }
+
+.carousel .btn_left, .carousel .btn_right { position: absolute; top: 50%; transform: translateY(-50%); box-sizing: border-box; border: 1px solid #ad2025; padding: 0; background: #eb1a22; width: 46px; height: 64px; }
+
+.carousel .btn_left::after, .carousel .btn_right::after { content: ""; position: absolute; top: 60%; left: 35%; width: 30px; height: 30px; border-left: 4px solid #ffffff; border-bottom: 4px solid #ffffff; transform: rotateZ(45deg) translate(-50%, -50%); }
+
+.carousel .btn_right::after { left: -10%; transform: rotateY(180deg) rotateZ(45deg) translate(-50%, -50%); }
+
+.carousel .carousel_nav { position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); }
+
+.carousel .carousel_nav button { display: block; z-index: 10; margin: 0 4px; padding: 0; border: 1px solid #e5b216; border-radius: 50%; width: 10px; height: 10px; background: #ffc000; }
+
+@media (min-width: 960px) { .carousel { padding-bottom: 50%; }
+  .carousel .page_1 { background-size: 28% auto, 13.5% auto, 50% auto; background-position: 80% 125%, 80% 20%, 5% 150%; }
+  .carousel .page_1 a { width: 40%; height: 40%; }
+  .carousel .btn_left, .carousel .btn_right { width: 70px; height: 100px; }
+  .carousel .btn_left::after, .carousel .btn_right::after { width: 40px; height: 40px; border-width: 5px; }
+  .carousel .btn_right::after { left: 0%; }
+  .carousel .carousel_nav button { margin: 0 5px; width: 15px; height: 15px; } }
+
+@media (min-width: 1220px) { .carousel .btn_left, .carousel .btn_right { width: 90px; height: 120px; }
+  .carousel .btn_left::after, .carousel .btn_right::after { width: 50px; height: 50px; border-width: 6px; }
+  .carousel .carousel_nav button { margin: 0 6px; width: 20px; height: 20px; } }
+
+/*# sourceMappingURL=../map/pizzeria.css.map */

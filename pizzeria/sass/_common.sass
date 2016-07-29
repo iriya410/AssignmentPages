@@ -1,0 +1,51 @@
+%reset_list
+	margin:
+		top: 0
+		bottom: 0
+	padding:
+		left: 0
+	list-style: none
+
+%clearfix
+	&::after
+		content: ""
+		display: block
+		clear: both
+
+%ir
+	overflow: hidden
+	text-indent: -9999em
+
+%readable_hidden
+	overflow: hidden
+	position: absolute
+	clip: rect(0, 0, 0, 0)
+	margin: -1px
+	border: 0
+	padding: 0
+	width: 1px
+	height: 1px
+
+@mixin media_mobile
+	@media (min-width: $mobile)
+		@content
+
+@mixin media_tablet
+	@media (min-width: $tablet)
+		@content
+
+@mixin media_desktop
+	@media (min-width: $desktop)
+		@content
+
+@mixin nav_button
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	align-items: center
+	margin: 15px 0
+	border: 0
+	padding: 0
+	width: 60px
+	height: 40px
+	font-size: 10px

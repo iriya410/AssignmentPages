@@ -1,0 +1,48 @@
+header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		padding: 0 2.5vw
+		height: 48px
+		line-height: 48px
+
+		background: linear-gradient(90deg, transparent 25%, #c30007 25%, #c30007 75%,  transparent 75%), #ed1c24
+			position: center, center
+			size: 60px, 100%
+
+		a
+			font-size: 12px
+		ul
+			li:not(:first-child)
+				margin-left: 18px
+			a
+				font-size: 10px
+
+		&::after
+			content: ""
+			position: absolute
+			min-width: $mobile
+			top: 40px
+			left: 0
+			right: 0
+			border-bottom: 1px solid yellow
+
+		
+		+media_tablet
+			padding: 0 5vw
+			background: linear-gradient(90deg, transparent 30%,  #ed1c24 30%,  #ed1c24 70%, transparent 70%), linear-gradient(90deg, transparent 25%, #c30007 25%, #c30007 75%, transparent 75%), #ed1c24
+				position: center, center, center
+				size: 50%, 6.25% , 100%
+		
+		+media_desktop
+			padding: 0 5vw
+			background: linear-gradient(90deg, #ed1c24 0%, #ed1c24 100%) no-repeat, linear-gradient(90deg, #c30007 25%, transparent 25%, transparent 75%, #c30007 75%), #ed1c24
+				position: center, center, center
+				size: 250px 48px, 100px, 100%
+
+			a
+				font-size: 16px
+			ul
+				a
+					font-size: 12px

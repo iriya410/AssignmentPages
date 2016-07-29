@@ -1,0 +1,105 @@
+nav
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+	border-bottom: 1px solid #c6c6c6
+	background: #ffffff
+	&::before
+			content: ""
+			box-sizing: border-box
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			border:
+				width: 0 1px 1px 1px
+				style: solid
+				color: #c6c6c6
+			border-radius: 50% / 75%
+			border-top-left-radius: 0
+			border-top-right-radius: 0
+			width: 200px
+			height: 100px
+			background: #ffffff
+
+	h2
+		@extend %readable_hidden
+
+	.logo
+		@extend %ir
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 200px
+		height: 100px
+		background: url(../img/pizzeria.png) no-repeat, linear-gradient(#ffffff 58px, transparent 58px)
+			position: center center, center
+			size: 70% auto, 100%
+
+	button
+		width: 52px
+		margin: 7px
+		border: 1px solid #e2e2e2
+		border-radius: 2px
+		padding: 16px 12px
+		background: linear-gradient(#ffffff 0%, #ededed 100%)
+		color: #ed1c24
+		font:
+			size: 8px
+		line-height: 1
+
+	ul
+		display: none
+
+	.link_about
+		background: url(../img/icon_about.png) no-repeat
+			position: center 25%
+	.link_menu
+		background: url(../img/icon_menu.png) no-repeat
+			position: center 25%
+	.link_event
+		background: url(../img/icon_event.png) no-repeat
+			position: center 25%
+	.link_community
+		background: url(../img/icon_community.png) no-repeat
+			position: center 25%
+
+	+media_tablet
+		padding: 0 5vw
+		&::before
+			width: 250px
+			height: 125px
+
+		.logo
+			width: 250px
+			height: 125px
+			background: url(../img/pizzeria.png) no-repeat, linear-gradient(#ffffff 70px, transparent 70px)
+				position: center center, center
+				size: 70% auto, 100%
+
+		.btn_grid
+			+nav_button
+			background: url(../img/icon_hamburger.png) no-repeat
+				position: center 25%
+
+		.btn_menu
+			display: none
+
+		ul
+			display: block
+			a
+				+nav_button
+				color: #ed1c24
+				font-size: 10px
+
+	+media_desktop
+		padding: 0 5vw
+		&::before
+			width: 300px
+			height: 150px
+
+		.logo
+			width: 300px
+			height: 150px

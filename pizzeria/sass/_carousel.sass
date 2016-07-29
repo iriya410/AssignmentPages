@@ -1,0 +1,145 @@
+.carousel
+	position: relative
+	padding-bottom: 90%
+
+	h2
+		@extend %readable_hidden
+
+	.pages
+		@extend %reset_list
+		position: absolute
+		width: 100%
+		height: 100%
+		overflow: hidden
+		
+	[class*="page_"]
+		position: absolute
+		top: 0
+		bottom: 0
+
+	.page_1
+		left: 0
+		right: 0
+		background: url(../img/pizza.png) no-repeat, url(../img/peppers.png) no-repeat, url(../img/buyabes.png) no-repeat
+			size: 43.75% auto, 20% auto, 62.5% auto
+			position: 80% 125%, 80% 20%, -20% 90%
+		a
+			@extend %ir
+			position: absolute
+			top: 35%
+			left: 50%
+			transform: translateX(-50%)
+			width: 62.5%
+			height: 35%
+			background: url(../img/delicious_pizzeria.png) no-repeat
+				size: 100% auto
+				position: center
+			//color: #e52020
+			//font-family:
+			//font-size: 
+			//text-align-last: right
+
+	.page_2
+		left: 100%
+		right: 0
+	.page_3
+		left: 100%
+		right: 0
+
+	.btn_left
+		left: 0
+
+	.btn_right
+		right: 0
+
+	
+	.btn_left, .btn_right
+		@extend %ir
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		box-sizing: border-box
+		border: 1px solid #ad2025
+		padding: 0
+		background: #eb1a22
+		width: 46px
+		height: 64px
+		&::after
+			content: ""
+			position: absolute
+			top: 60%
+			left: 35%
+			width: 30px
+			height: 30px
+			border:
+				left: 4px solid #ffffff
+				bottom: 4px solid #ffffff
+			transform: rotateZ(45deg) translate(-50%,-50%)
+	
+	.btn_right::after
+		left: -10%
+		transform: rotateY(180deg) rotateZ(45deg) translate(-50%,-50%)
+
+	.carousel_nav
+		position: absolute
+		left: 50%
+		bottom: 20px
+		transform: translateX(-50%)
+		button
+			@extend %ir
+			display: block
+			z-index: 10
+			margin: 0 4px
+			padding: 0
+			border: 1px solid #e5b216
+			border-radius: 50%
+			width: 10px
+			height: 10px
+			background: #ffc000
+
+
+
+	+media_tablet
+		padding-bottom: 50%
+
+		.page_1
+			background:
+				size: 28% auto, 13.5% auto, 50% auto
+				position: 80% 125%, 80% 20%, 5% 150%
+			a
+				width: 40%
+				height: 40%
+
+		.btn_left, .btn_right
+			width: 70px
+			height: 100px
+			&::after
+					width: 40px
+					height: 40px
+					border:
+						width: 5px
+
+		.btn_right::after
+			left: 0%
+
+		.carousel_nav
+			button
+				margin: 0 5px
+				width: 15px
+				height: 15px
+
+	+media_desktop
+		.btn_left, .btn_right
+			width: 90px
+			height: 120px
+			&::after
+					width: 50px
+					height: 50px
+					border:
+						width: 6px
+
+		.carousel_nav
+			button
+				margin: 0 6px
+				width: 20px
+				height: 20px
