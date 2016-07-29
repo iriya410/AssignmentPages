@@ -234,13 +234,24 @@ span.category {
 	margin-top: 20px;
 }
 
-
 [class*="featured_"], [class*="blog_"] {
 	position: relative;
 	padding-top: 28px;
-	/*border-right: 1px solid #ECECEC;
-	border-bottom: 1px solid #ECECEC;*/
+	border-right: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
 }
+
+[class*="brand_"] {
+	border-top: 1px solid #ececec;
+	border-right: 1px solid #ececec;
+}
+
+[class*="brand_"]:first-child,
+[class*="featured_"]:nth-child(4), [class*="featured_"]:nth-child(8),
+[class*="blog_"]:nth-child(4), [class*="blog_"]:nth-child(5) {
+	border-right: none;
+}
+
 .featured_header h2, .blog_header h2 {
 	font-size: 18px;
 	line-height: 30px;
@@ -494,7 +505,7 @@ span.category {
 }
 
 .brands [class*="brand_"]:nth-child(1) {
-	/*border-right: 1px solid #ECECEC;*/
+	/* border-right: 1px solid #ECECEC; */
 }
 
 .brand_header h2 {
@@ -528,7 +539,7 @@ span.category {
 }
 
 .footer .categories a:not(:last-child)::after {
-	content: "•";
+	content: "â€¢";
 	color: #656565;
 	position: absolute;
 	top: 0px;
