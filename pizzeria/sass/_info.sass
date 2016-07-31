@@ -1,0 +1,87 @@
+.info
+	position: relative
+	background: url(../img/bg-wood.png)
+		size: cover
+	color: #914c1e
+	text-align: center
+
+	h2
+		padding-top: 12%
+		font-size: 6.875vw
+		font-family: "Yellowtail"
+
+	.ribborn
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		top: -10px
+		width: 18%
+		height: auto
+
+	.arrow
+		margin: 10px 0
+		width: 5%
+		height: auto
+
+	.info_article
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	article
+		display: flex
+		flex: 1 0
+		flex-direction: column
+		justify-content: center
+		margin: 24px 17px
+			top: 0
+		border: 1px solid
+		border-radius: 1vw
+		width: 85%
+		height: 37.5vw
+		font-size: 5vw
+		
+		h3
+			margin-bottom: 15px
+			font-size: 5.625vw
+		p
+			margin: 0
+				top: 10px
+
+	span
+		display: block
+
+	+media_tablet
+		h2
+			padding-top: 6%
+			font-size: 2.5vw
+
+		.ribborn
+			width: 7.5%
+
+		.arrow
+			width: 22px
+
+		.info_article
+			flex-direction: row
+
+		article
+			max-width: 25%
+			height: 170px
+			font-size: 1.875vw
+			h3
+				font-size: 2vw
+
+	+media_desktop
+		h2
+			padding-top: 70px
+			font-size: 30px
+
+		.ribborn
+			width: 93px
+		
+		article
+			font-size: 23px
+			h3
+				font-size: 26px

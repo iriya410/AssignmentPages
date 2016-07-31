@@ -1,0 +1,117 @@
+.intro
+	display: flex
+	flex-direction: column
+	border-top-left-radius: 3vw
+	border-top-right-radius: 3vw
+	background: #ffffff
+
+	h2
+		@extend %readable_hidden
+
+	article
+		flex: 1 0
+		h3
+			margin: 5vw 0
+			color: #ed1c24
+			font-family: "Yellowtail"
+			font-size: 6.25vw
+			text-align: center
+		p
+			margin: 0 auto
+			width: 85%
+			color: #717171
+			font-size: 3.75vw
+			line-height: 2
+			letter-spacing: -0.15em
+			word-spacing: 0.2em
+			text-align: justify
+		span
+			display: block
+			margin: 0 auto
+			width: 85%
+			color: #717171
+			font-family: "Yellowtail"
+			font-size: 3.75vw
+			line-height: 2
+			text-align: right
+
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			float: right
+			margin-right: 7.5%
+			margin-bottom: 20px
+			border: 1px solid #dedede
+			border-radius: 0.2em
+			width: 40.625%
+			background: linear-gradient(#ffffff 0%, #ececec 100%)
+			color:#d40000
+			font-size: 4.5vw
+			line-height: 2.75
+		
+	.imgs
+		display: flex
+		margin: 0 auto
+		padding: 4vw 0
+		width: 85%
+		justify-content: space-around
+	
+	[class*="fresh_"]
+		width: 30%
+		padding-bottom: 30%
+		border: 1vw solid #e6e6e6
+		border-radius: 50%
+
+	.fresh_1
+		background: url(../img/f1.png) no-repeat
+			size: cover
+
+	.fresh_2
+		background: url(../img/f2.png) no-repeat
+			position: 50% 75%
+			size: cover
+
+	.fresh_3
+		background: url(../img/f3.png) no-repeat
+			position: 50% 90%
+			size: cover
+
+
+	+media_tablet
+		flex-direction: row
+		article
+			h3
+				margin: 20px 0
+				font-size: 2vw
+			p
+				width: 75%
+				font-size: 1vw
+			span
+				width: 75%
+				font-size: 1vw
+			a
+				width: 25%
+				margin-top: 1.5em
+				margin-right: 12.5%
+				font-size: 1vw
+
+		.imgs
+			padding: 2vw 0
+
+		[class*="fresh_"]
+			border-width: 4px
+			width: 25%
+			padding-bottom: 25%
+
+	+media_desktop
+		article
+			h3
+				font-size: 24px
+			p
+				font-size: 12px
+			span
+				font-size: 12px
+			a
+				width: 100px
+				font-size: 12px

@@ -1,0 +1,45 @@
+.about
+	display: flex
+	position: relative
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	color: #ffffff
+	text-align: center
+	&::before
+		content: ""
+		position: absolute
+		z-index: 10
+		width: 100%
+		height: 100%
+		background: url(../img/bg-about.png)
+			position: center
+			size: cover
+		-webkit-filter: blur(1px)
+
+	h2
+		@extend %not_blur
+		padding: 20px 22.5%
+			bottom: 0
+		font-size: 6.25vw
+
+	span
+		@extend %not_blur
+		font-family: "Yellowtail"
+		font-size: 6.25vw
+
+	p
+		@extend %not_blur
+		margin: 20px 5vw
+		font-size: 3.5vw
+
+	+media_tablet
+		h2
+			padding: 40px 0
+				bottom: 0
+			font-size: 25px
+		span
+			font-size: 25px
+		p
+			margin-bottom: 40px
+			font-size: 14px
