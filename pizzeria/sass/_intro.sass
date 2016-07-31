@@ -80,23 +80,44 @@
 
 	+media_tablet
 		flex-direction: row
+		border-radius: 0
+		background: linear-gradient(transparent 25%, #ffffff 25%)
+
 		article
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				z-index: 10
+				top: 0
+				left: 50%
+				transform: translateX(-50%)
+				width: 95%
+				height: 100%
+				border-radius: 10px
+				background: #ffffff
+
 			h3
+				+forward_pseudo_element
 				margin: 20px 0
 				font-size: 2vw
 			p
+				+forward_pseudo_element
 				width: 75%
 				font-size: 1vw
 			span
+				+forward_pseudo_element
 				width: 75%
 				font-size: 1vw
 			a
+				+forward_pseudo_element
 				width: 25%
 				margin-top: 1.5em
 				margin-right: 12.5%
 				font-size: 1vw
 
 		.imgs
+			+forward_pseudo_element
 			padding: 2vw 0
 
 		[class*="fresh_"]

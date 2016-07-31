@@ -18,18 +18,18 @@
 		-webkit-filter: blur(1px)
 
 	h2
-		@extend %not_blur
+		+forward_pseudo_element
 		padding: 20px 22.5%
 			bottom: 0
 		font-size: 6.25vw
 
 	span
-		@extend %not_blur
+		+forward_pseudo_element
 		font-family: "Yellowtail"
 		font-size: 6.25vw
 
 	p
-		@extend %not_blur
+		+forward_pseudo_element
 		margin: 20px 5vw
 		font-size: 3.5vw
 

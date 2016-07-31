@@ -5,8 +5,6 @@ nav .logo, .carousel .page_1 a, .carousel .btn_left, .carousel .btn_right, .caro
 
 nav h2, .carousel h2, .intro h2 { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); margin: -1px; border: 0; padding: 0; width: 1px; height: 1px; }
 
-.about h2, .about span, .about p { position: relative; z-index: 20; }
-
 h1, h2, h3 { margin: 0; }
 
 ul li { float: left; display: block; }
@@ -127,12 +125,14 @@ nav .link_community { background: url(../img/icon_community.png) no-repeat; back
 
 .intro .fresh_3 { background: url(../img/f3.png) no-repeat; background-position: 50% 90%; background-size: cover; }
 
-@media (min-width: 960px) { .intro { flex-direction: row; }
-  .intro article h3 { margin: 20px 0; font-size: 2vw; }
-  .intro article p { width: 75%; font-size: 1vw; }
-  .intro article span { width: 75%; font-size: 1vw; }
-  .intro article a { width: 25%; margin-top: 1.5em; margin-right: 12.5%; font-size: 1vw; }
-  .intro .imgs { padding: 2vw 0; }
+@media (min-width: 960px) { .intro { flex-direction: row; border-radius: 0; background: linear-gradient(transparent 25%, #ffffff 25%); }
+  .intro article { position: relative; }
+  .intro article::before { content: ""; position: absolute; z-index: 10; top: 0; left: 50%; transform: translateX(-50%); width: 95%; height: 100%; border-radius: 10px; background: #ffffff; }
+  .intro article h3 { position: relative; z-index: 20; margin: 20px 0; font-size: 2vw; }
+  .intro article p { position: relative; z-index: 20; width: 75%; font-size: 1vw; }
+  .intro article span { position: relative; z-index: 20; width: 75%; font-size: 1vw; }
+  .intro article a { position: relative; z-index: 20; width: 25%; margin-top: 1.5em; margin-right: 12.5%; font-size: 1vw; }
+  .intro .imgs { position: relative; z-index: 20; padding: 2vw 0; }
   .intro [class*="fresh_"] { border-width: 4px; width: 25%; padding-bottom: 25%; } }
 
 @media (min-width: 1220px) { .intro article h3 { font-size: 24px; }
@@ -174,11 +174,11 @@ nav .link_community { background: url(../img/icon_community.png) no-repeat; back
 
 .about::before { content: ""; position: absolute; z-index: 10; width: 100%; height: 100%; background: url(../img/bg-about.png); background-position: center; background-size: cover; -webkit-filter: blur(1px); }
 
-.about h2 { padding: 20px 22.5%; padding-bottom: 0; font-size: 6.25vw; }
+.about h2 { position: relative; z-index: 20; padding: 20px 22.5%; padding-bottom: 0; font-size: 6.25vw; }
 
-.about span { font-family: "Yellowtail"; font-size: 6.25vw; }
+.about span { position: relative; z-index: 20; font-family: "Yellowtail"; font-size: 6.25vw; }
 
-.about p { margin: 20px 5vw; font-size: 3.5vw; }
+.about p { position: relative; z-index: 20; margin: 20px 5vw; font-size: 3.5vw; }
 
 @media (min-width: 960px) { .about h2 { padding: 40px 0; padding-bottom: 0; font-size: 25px; }
   .about span { font-size: 25px; }
