@@ -144,7 +144,7 @@ nav .link_community { background: url(../img/icon_community.png) no-repeat; back
 
 .info h2 { padding-top: 12%; font-size: 6.875vw; font-family: "Yellowtail"; }
 
-.info .ribborn { position: absolute; left: 50%; transform: translateX(-50%); top: -10px; width: 18%; height: auto; }
+.info .ribborn { position: absolute; z-index: 20; left: 50%; transform: translateX(-50%); top: -10px; width: 18%; height: auto; }
 
 .info .arrow { margin: 10px 0; width: 5%; height: auto; }
 
