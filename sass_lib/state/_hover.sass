@@ -4,12 +4,12 @@
 	&::after
 		content: ""
 		display: block
-		box-sizing: border-box
-		overflow: hidden
+		visibility: hidden
 		+direction_effect_start($dir)
 		+effect_shape($shape, $shape_attr)
 		+transition($transition)
 	&:hover
 		&::after
+			visibility: visible
 			+direction_effect_end($dir)
 		@content
