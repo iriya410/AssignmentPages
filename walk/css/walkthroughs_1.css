@@ -1,0 +1,52 @@
+@import "https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,400i";
+body { margin: 0; }
+
+section .text h2, section .text p { margin: 0; border: 0; padding: 0; }
+
+body a { color: inherit; text-decoration: none; }
+
+html { font-size: 13.632px; }
+
+@media (min-width: 320px) and (max-width: 749px) { html { font-size: calc(13.632px + (18.368 * (100vw - 320px) / 430 )); } }
+
+@media (min-width: 750px) { html { font-size: 32px; } }
+
+body { min-width: 320px; }
+
+section { display: flex; flex: 0 0; flex-direction: column; justify-content: space-between; align-items: center; max-width: 750px; background: url(../img/bg.jpg); background-size: 100%; font-family: "Merriweather Sans"; }
+
+section .text { order: 2; margin-top: 64.5333%; color: #ffffff; text-align: center; }
+
+section .text h2 { font-family: "Merriweather"; font-size: 1.625rem; line-height: 2.03125rem; }
+
+section .text p { margin-top: 5.3333%; font-size: 1rem; line-height: 1.625rem; font-style: italic; }
+
+section .buttons { display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; width: 100%; order: 3; }
+
+section .buttons a { margin: 0; font-size: 0.75rem; line-height: 3.75rem; }
+
+section .buttons .facebook { display: flex; flex-direction: row; justify-content: center; align-items: center; order: 1; position: relative; z-index: 0; width: 96%; margin-top: 38%; background: #215b9a; color: #ffffff; }
+
+section .buttons .facebook::after { content: ""; display: block; box-sizing: border-box; overflow: hidden; position: absolute; top: 50%; left: 0; bottom: 50%; right: 0; z-index: -1; background: #000000; transition: all 0.4s; }
+
+section .buttons .facebook:hover::after { top: 0; bottom: 0; }
+
+section .buttons .facebook img { width: 5.9722%; margin-right: 2.6388%; }
+
+section .buttons .bottom_buttons { display: flex; flex-direction: row; justify-content: space-around; align-items: center; order: 2; width: 100%; margin: 2.6666% 0; }
+
+section .buttons .bottom_buttons a { display: flex; flex-direction: row; justify-content: center; align-items: center; position: relative; z-index: 0; width: 46%; background: #ffffff; }
+
+section .buttons .bottom_buttons a::after { content: ""; display: block; box-sizing: border-box; overflow: hidden; position: absolute; top: 50%; left: 0; bottom: 50%; right: 0; z-index: -1; background: #000000; transition: all 0.4s; }
+
+section .buttons .bottom_buttons a:hover { color: #ffffff; }
+
+section .buttons .bottom_buttons a:hover::after { top: 0; bottom: 0; }
+
+section .skip { align-self: flex-end; order: 1; position: relative; z-index: 0; margin-top: 7.3333%; margin-right: 4.9333%; font-size: 0.875rem; }
+
+section .skip::after { content: ""; display: block; box-sizing: border-box; overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 100%; z-index: -1; border-bottom: 4px solid #ffffff; transition: all 0.4s; }
+
+section .skip:hover::after { right: 0; }
+
+/*# sourceMappingURL=../map/walkthroughs_1.css.map */
