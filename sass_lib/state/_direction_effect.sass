@@ -1,0 +1,55 @@
+=direction_effect_start($dir)
+	// left to right
+	@if $dir == ltr
+		+pos(absolute, top 0 left 0 bottom 0 right 100% z-index -1)
+	// right to left
+	@if $dir == rtl
+		+pos(absolute, top 0 left 100% bottom 0 right 0 z-index -1)
+	// top to bottom
+	@if $dir == ttb
+		+pos(absolute, top 0 left 0 bottom 100% right 0 z-index -1)
+	// bottom to top
+	@if $dir == btt
+		+pos(absolute, top 100% left 0 bottom 0 right 0 z-index -1)
+	// vertical shutter in to out
+	@if $dir == vsio
+		+pos(absolute, top 0 left 50% bottom 0 right 50% z-index -1)
+	// vertical shutter out to in
+	@if $dir == vsoi
+		+pos(absolute, top 0 left 0 bottom 0 right 0 z-index -1)
+	// horizontal shutter in to out
+	@if $dir == hsio
+		+pos(absolute, top 50% left 0 bottom 50% right 0 z-index -1)
+	// horizontal shutter out to in
+	@if $dir == hsoi
+		+pos(absolute, top 0 left 0 bottom 0 right 0 z-index -1)
+
+=direction_effect_end($dir)
+	// left to right
+	@if $dir == ltr
+		right: 0
+	// right to left
+	@if $dir == rtl
+		left: 0
+	// top to bottom
+	@if $dir == ttb
+		bottom: 0
+	// bottom to top
+	@if $dir == btt
+		top: 0
+	// vertical shutter in to out
+	@if $dir == vsio
+		left: 0
+		right: 0
+	// vertical shutter in to out
+	@if $dir == vsoi
+		left: 50%
+		right: 50%
+	// horizontal shutter in to out
+	@if $dir == hsio
+		top: 0
+		bottom: 0
+	// horizontal shutter in to out
+	@if $dir == hsoi
+		top: 50%
+		bottom: 50%

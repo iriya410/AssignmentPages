@@ -1,0 +1,11 @@
+=pos($position: relative, $args: null)
+	position: $position
+	@if $args != null
+		@each $attr in top, left, bottom, right, z-index
+			$i: index($args, $attr)
+			@if $i
+				#{$attr}: nth($args, $i + 1)
+
+=pos_ab_center
+	+pos(absolute, top 50% left 50%)
+	transform: translate(-50%, -50%)

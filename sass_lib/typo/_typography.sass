@@ -1,0 +1,19 @@
+$min_screen_width: 320px
+$max_screen_width: 750px
+$distance_screen_width: $max_screen_width - $min_screen_width
+
+// 기준이 되는 컴포넌트(ex: p, span)의 폰트 사이즈 변화를 이용
+$min_basic_font_size: 13.632px
+$max_basic_font_size: 32px
+$distance_basic_font_size: $max_basic_font_size - $min_basic_font_size
+
+// 모든 컴포넌트의 font-size는 rem 사용
+// 고정 font-size는 px 사용
+html
+	font-size: $min_basic_font_size
+
+	@media (min-width: $min_screen_width) and (max-width: $max_screen_width - 1)
+		font-size: calc(#{$min_basic_font_size} + (#{$distance_basic_font_size / ($distance_basic_font_size * 0 + 1)} * (100vw - #{$min_screen_width}) / #{$distance_screen_width / ($distance_screen_width * 0 + 1)} ))
+
+	@media (min-width: $max_screen_width)
+		font-size: $max_basic_font_size

@@ -1,0 +1,13 @@
+=hover($dir, $shape, $shape_attr, $transition)
+	&::after
+		content: ""
+		display: block
+		box-sizing: border-box
+		overflow: hidden
+		+direction_effect_start($dir)
+		+effect_shape($shape, $shape_attr)
+		+transition($transition)
+	&:hover
+		&::after
+			+direction_effect_end($dir)
+		@content
