@@ -8,7 +8,7 @@ body
 		@extend %reset_link
 
 section
-	+flex(0 0, column, space-between, center)
+	+flex(null, column, space-between, center)
 	max-width: 750px
 	+background(url(../img/bg.jpg), null, 100%)
 	font-family: "Merriweather Sans"
@@ -18,18 +18,17 @@ section
 		margin-top: 64.5333%
 		color: #ffffff
 		text-align: center
-		h2
-			@extend %reset_block
-			font-family: "Merriweather"
-			font-size: 1.625rem
-			line-height: 2.03125rem
-		p
-			@extend %reset_block
-			margin:
-				top: 5.3333%
-			font-size: 1rem
-			line-height: 1.625rem
-			font-style: italic
+
+	h2
+		@extend %reset_block
+		font-family: "Merriweather"
+		+fslh(1.625rem, 2.03125rem)
+
+	p
+		@extend %reset_block
+		margin-top: 5.3333%
+		+fslh(1rem, 1.625rem)
+		font-style: italic
 
 	.buttons
 		+flex
@@ -38,46 +37,38 @@ section
 		order: 3
 		a
 			margin: 0
-			font-size: 0.75rem
-			line-height: 3.75rem
+			+fslh(0.75rem, 3.75rem)
 
-		.facebook
+	.facebook
+		+flex
+		order: 1
+		width: 96%
+		margin-top: 38%
+		+background(#215b9a)
+		color: #ffffff
+		+hover(hsio, background, #000000, all 0.4s)
+		img
+			width: 5.9722%
+			margin-right: 2.6388%
+
+	.bottom_buttons
+		+flex(null, row, space-around)
+		order: 2
+		width: 100%
+		margin: 2.6666% 0
+		a
 			+flex
-			order: 1
-			position: relative
-			z-index: 0
-			width: 96%
-			margin:
-				top: 38%
-			+background(#215b9a)
-			+hover(hsio, background, #000000, all 0.4s)
-			color: #ffffff
-			img
-				width: 5.9722%
-				margin-right: 2.6388%
-
-
-		.bottom_buttons
-			+flex(null, row, space-around)
-			order: 2
-			width: 100%
-			margin: 2.6666% 0
-			a
-				+flex
-				position: relative
-				z-index: 0
-				width: 46%
-				+background(#ffffff)
-				+hover(hsio, background, #000000, all 0.4s)
-					color: #ffffff
+			width: 46%
+			+background(#ffffff)
+			+hover(vsio, background, #000000, all 0.4s)
+				color: #ffffff
 
 	.skip
 		align-self: flex-end
 		order: 1
-		position: relative
-		z-index: 0
 		margin:
 			top: 7.3333%
 			right: 4.9333%
-		+hover(ltr, border-bottom, 4px solid #ffffff, all 0.4s)
-		font-size: 0.875rem
+		+hover(ltr, border-bottom, 2px solid #ffffff, all 0.4s)
+			color: #ffffff
+		+fslh(0.875rem)
