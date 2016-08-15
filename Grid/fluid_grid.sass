@@ -1,0 +1,25 @@
+%row
+	display: flex
+	flex: 0 1 auto
+
+%col_1_1
+	display: flex
+	flex: 0 0 100%
+	max-width: 100%
+
+@for $i from 1 through $columns
+	@for $j from 1 through $i
+		@if $j != $i
+			#{"%col_"+ $j + "_" + $i}
+				display: flex
+				flex: 0 0 ($j * 100 / $i)+%
+				max-width: ($j * 100 / $i)+%
+
+%offset_1_1
+	margin-left: 100%
+
+@for $i from 1 through $columns
+	@for $j from 1 through $i
+		@if $j != $i
+			#{"%offset_"+ $j + "_" + $i}
+				margin-left: ($j * 100 / $i)+%

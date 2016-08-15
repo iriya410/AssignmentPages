@@ -5,11 +5,12 @@
 		content: ""
 		display: block
 		visibility: hidden
-		+direction_effect_start($dir)
-		+effect_shape($shape, $shape_attr)
-		+transition($transition)
+		+direction_start($dir)
+		+hover_shape($shape, $shape_attr)
+		border-radius: inherit
+		transition: $transition
 	&:hover
 		&::after
 			visibility: visible
-			+direction_effect_end($dir)
+			+direction_end($dir)
 		@content

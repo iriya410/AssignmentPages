@@ -1,4 +1,4 @@
-=direction_effect_start($dir)
+=direction_start($dir)
 	// left to right
 	@if $dir == ltr
 		+pos(absolute, top 0 left 0 bottom 0 right 100% z-index -1)
@@ -24,7 +24,7 @@
 	@if $dir == hsoi
 		+pos(absolute, top 0 left 0 bottom 0 right 0 z-index -1)
 
-=direction_effect_end($dir)
+=direction_end($dir)
 	// left to right
 	@if $dir == ltr
 		right: 0

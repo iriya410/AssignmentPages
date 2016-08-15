@@ -1,0 +1,6 @@
+=padding($args)
+	@if $args != null
+		@each $attr in top, left, bottom, right
+			$i: index($args, $attr)
+			@if $i
+				padding-#{$attr}: nth($args, $i + 1)

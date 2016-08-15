@@ -2,10 +2,6 @@
 @import common/_reset.sass
 @import common/_ir.sass
 @import common/_rh.sass
-@import common/_size.sass
-
-// image
-@import image/_background.sass
 
 // layout
 @import layout/_flex.sass
@@ -16,11 +12,23 @@
 @import typo/_font.sass
 
 // component
+@import component/_size.sass
+@import component/_shape.sass
+@import component/_margin.sass
+@import component/_padding.sass
 
+// image
+@import image/_image.sass
+@import image/_background.sass
 
-// state
-@import state/_direction_effect.sass
-@import state/_effect_shape.sass
-@import state/_transition.sass
-@import state/_hover.sass
+// hover
+@import state/hover/_hover_shape.sass
+@import state/hover/_direction.sass
+@import state/hover/_hover.sass
+// active
+@import state/active/_active_shape.sass
+@import state/active/_active.sass
+// focus
 @import state/_focus.sass
+// visited
+@import state/_visited.sass
