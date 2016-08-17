@@ -1,0 +1,51 @@
+body { margin: 0; }
+
+a { color: inherit; text-decoration: none; }
+
+.link_back, .show_pass { display: block; overflow: hidden; text-indent: -9999em; white-space: nowrap; }
+
+html { font-size: 11.9466px; }
+
+@media (min-width: 320px) and (max-width: 749px) { html { font-size: calc(11.9466px + (16.0534 * (100vw - 320px) / 430)); } }
+
+@media (min-width: 750px) { html { font-size: 28px; } }
+
+img { vertical-align: middle; }
+
+body { max-width: 750px; min-width: 320px; margin: 0 auto; background-color: black; }
+
+section { position: relative; padding-bottom: 177.8666%; background-color: black; }
+
+a { font-family: "OpenSans"; font-weight: bold; }
+
+input.input_text { width: 79.3733%; height: 3.5714rem; margin: 1px; border: 1px solid #0de0fc; background: none; color: #0de0fc; font-size: 1rem; line-height: 1; text-align: center; }
+
+input.input_text::-webkit-input-placeholder { color: #0de0fc; }
+
+section { background: url(../asset/login.jpg) no-repeat; background-position: center; background-size: cover; }
+
+section::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 0; background-color: rgba(0, 0, 0, 0.5); }
+
+.header { display: flex; flex-direction: row; justify-content: space-around; align-items: center; margin-top: 8.8455%; width: 100%; height: auto; position: relative; top: 0; left: 0; }
+
+.header h2 { order: 2; margin: 0; color: #ffffff; font-size: 1rem; line-height: 1; }
+
+.header::after { content: ""; order: 3; }
+
+.link_back { order: 1; z-index: 10; width: 1rem; height: 1rem; position: relative; }
+
+.link_back::after { content: ""; position: absolute; top: 50%; left: 50%; width: 50%; height: 50%; border-left: 0.15rem solid #0de0fc; border-bottom: 0.15rem solid #0de0fc; transform-origin: 0 0; transform: rotateZ(45deg) translate(-50%, -50%); }
+
+form { display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; width: 100%; height: 100%; max-height: 100vh; }
+
+.show_pass { width: 6.6666%; height: 2rem; position: absolute; right: 15%; border: none; background: url("../asset/look.png") no-repeat; background-position: center; background-size: contain; }
+
+.show_pass:hover { cursor: pointer; }
+
+.account_option { display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 79.3733%; height: 3.5714rem; color: #9b9b9b; font-size: 0.7142rem; line-height: 1; }
+
+.login { display: flex; flex-direction: row; justify-content: center; align-items: center; width: 750px; height: 3.5714rem; border: 0; padding: 0; position: fixed; bottom: 0; background-color: #0de0fc; font-size: 1.25rem; line-height: 1; font-family: "OpenSans"; font-weight: bold; }
+
+.login:hover { cursor: pointer; }
+
+/*# sourceMappingURL=../map/sign_in.css.map */

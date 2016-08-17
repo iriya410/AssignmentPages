@@ -1,0 +1,33 @@
+$min_width: 320px
+$max_width: 750px
+$basic_font_size: 28px
+
+$custom_color_1: #0de0fc
+
+body
+	@extend %reset_body
+	max-width: $max_width
+	min-width: $min_width
+	margin: 0 auto
+	background-color: black
+
+section
+	position: relative
+	+padding(bottom 177.8666%)
+	background-color: black
+
+a
+	@extend %reset_link
+	font-family: "OpenSans"
+	font-weight: bold
+
+input.input_text
+		+size(79.3733%, 3.5714rem)
+		margin: 1px
+		border: 1px solid #{$custom_color_1}
+		background: none
+		color: #{$custom_color_1}
+		+fslh(1rem)
+		text-align: center
+		&::-webkit-input-placeholder
+			color: #{$custom_color_1}

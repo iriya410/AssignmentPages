@@ -1,0 +1,64 @@
+@import ../../sass_lib/_lib.sass
+@import _common.sass
+
+section
+	+background(url(../asset/login.jpg) no-repeat, center, cover)
+	&::before
+		content: ""
+		+pos(absolute, top 0 left 0 bottom 0 right 0 z-index 0)
+		background-color: rgba(0, 0, 0, 0.5)
+
+.header
+	+flex(null, row, space-around, center)
+	+margin(top 8.8455%)
+	+size(100%)
+	+pos(relative, top 0 left 0)
+	h2
+		order: 2
+		margin: 0
+		color: #ffffff
+		+fslh(1rem)
+	&::after
+		content: ""
+		order: 3
+
+.link_back
+	@extend %ir
+	order: 1
+	z-index: 10
+	+size(1rem, 1rem)
+	+pseudo_left_arrow($custom_color_1)
+
+form
+	+flex(null, column)
+	+pos(absolute)
+	+size(100%, 100%)
+	max-height: 100vh
+
+.show_pass
+	@extend %ir
+	+size(6.6666%, 2rem)
+	+pos(absolute, right 15%)
+	border: none
+	+background(url("../asset/look.png") no-repeat, center, contain)
+	&:hover
+		cursor: pointer
+
+.account_option
+	+flex(null, row, space-between)
+	+size(79.3733%, 3.5714rem)
+	color: #9b9b9b
+	+fslh(0.7142rem)
+
+.login
+	+flex
+	+size(750px, 3.5714rem)
+	border: 0
+	padding: 0
+	+pos(fixed, bottom 0)
+	background-color: #{$custom_color_1}
+	+fslh(1.25rem)
+	font-family: "OpenSans"
+	font-weight: bold
+	&:hover
+		cursor: pointer

@@ -1,0 +1,28 @@
+@import ../../sass_lib/_lib.sass
+@import _common.sass
+
+h2
+	@extend %rh
+
+span
+	+pos_ab_horizontal_center
+	+margin(top 14.3333%)
+	+fslh(5.7803rem)
+	color: #282828
+	font-family: "Norwester"
+	letter-spacing: -0.04em
+	text-align: center
+
+img
+	+size(100%)
+	+pos_ab_vertical_center
+	top: 55%
+
+a
+	+flex
+	+round(64%, 3.5714rem, 3.5714rem)
+	+pos_ab_horizontal_center
+	bottom: 0
+	+margin(bottom 10.8266%)
+	+background(#{$custom_color_1})
+	+fslh(1rem)
