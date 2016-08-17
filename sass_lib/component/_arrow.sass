@@ -1,4 +1,10 @@
-=pseudo_left_arrow
+=pseudo_left_arrow($border_color)
+	position: relative
 	&::after
 		content: ""
-		//+pos(absolute, )
+		+pos(absolute, top 50% left 50%)
+		+size(50%, 50%)
+		border-left: 0.15rem solid #{$border_color}
+		border-bottom: 0.15rem solid #{$border_color}
+		transform-origin: 0 0
+		transform: rotateZ(45deg) translate(-50%, -50%)
