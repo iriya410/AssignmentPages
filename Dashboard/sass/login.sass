@@ -1,0 +1,148 @@
+@import ../../sass_lib/_lib.sass
+
+html
+	font-size: 14px
+	font-family: "Source Sans Pro"
+	font-weight: 600
+
+body
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0
+	min-height: 100vh
+	background-color: #EFF3F6
+
+.login_social
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	max-width: 550px
+
+.base
+	display: flex
+	flex-direction: column
+	border: 1px solid #e4e7ed
+	width: 450px
+
+header
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	border-bottom: 1px solid #e4e7ed
+	padding-top: 20px
+	height: 90px
+	background-color: #f8fafc
+	font-size: 24px
+	font-weight: 400
+	&::before
+		content: ""
+		position: absolute
+		top: -35px
+		left: 195px
+		width: 70px
+		height: 70px
+		border-radius: 35px
+		background-image: url("../asset/Plane icon.png")
+		background-repeat: no-repeat
+		background-position: center
+		background-color: #279cf4
+
+form
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: center
+	padding-bottom: 20px
+	height: 280px
+	background-color: #ffffff
+	.input
+		display: flex
+		flex-direction: column
+		width: 390px
+		input
+			width: 390px
+			height: 46px
+			border: 1px solid #dfe3e9
+			border-radius: 3px
+			background-color: #f8fafc
+			color: #4b5565
+			text-indent: 20px
+		span
+			align-self: flex-start
+			line-height: 2
+			color: #7f8fa4
+
+	button
+		border: 1px solid #2ba03b
+		border-radius: 3px
+		width: 390px
+		height: 46px
+		background-color: #38b248
+		color: #ffffff
+
+footer
+	display: flex
+	position: relative
+	justify-content: center
+	align-items: center
+	border-top: 1px solid #e4e7ed
+	height: 135px
+	background-color: #ffffff
+	&::before
+		content: "Login via social networks"
+		position: absolute
+		top: -1rem
+		padding: 0 30px
+		background-color: #ffffff
+		color: #8897aa
+		line-height: 2rem
+	.social
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		width: 390px
+		a
+			@extend %ir
+			position: relative
+			border-radius: 3px
+			width: 70px
+			height: 70px
+			&::after
+				content: ""
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				background-repeat: no-repeat
+				background-position: center
+
+	.twitter
+		background-color: #3cbeff
+		&::after
+			background-image: url("../asset/Twitter icon.png")
+	.facebook
+		background-color: #2190e2
+		&::after
+			background-image: url("../asset/Facebook icon.png")
+	.pinterest
+		background-color: #f25337
+		&::after
+			background-image: url("../asset/Pinterest icon.png")
+	.dribbble
+		background-color: #e74986
+		&::after
+			background-image: url("../asset/Dribbble icon.png")
+
+.option
+	display: flex
+	justify-content: space-between
+	width: 100%
+	a
+		@extend %reset_link
+		color: #9facbc
+		line-height: 3rem
