@@ -2,6 +2,7 @@
 
 .row {
 	position: relative;
+	width: 100%;
 }
 
 .row::after {
@@ -14,7 +15,6 @@
 .row [class*="div_"] {
 	float: left;
 	box-sizing: border-box;
-	width: 100%;
 }
 
 /* col */
